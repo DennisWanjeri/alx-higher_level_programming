@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
  *insert_node - inserts a node in a sorted linked list
  *@head:pointer to sorted linked list
@@ -35,7 +37,7 @@ listint_t *insert_node(listint_t **head, int number)
 		else
 		{
 			temp = temp->next;
-			for (; temp->next != NULL)
+			for (; temp->next != NULL; )
 			{
 				if (number >= temp->n && number <= temp->next->n)
 				{
