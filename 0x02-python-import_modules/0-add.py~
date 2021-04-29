@@ -1,7 +1,0 @@
-#!/usr/bin/python3
-import add_0.add
-add_1 = add_0.add
-a = 1
-b = 2
-value = add_1(a, b)
-print("{} + {} = {}".format(a, b, c))
