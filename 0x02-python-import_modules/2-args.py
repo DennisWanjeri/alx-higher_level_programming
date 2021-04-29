@@ -11,5 +11,5 @@ if __name__ == "__main__":
     else:
         print("{:d} arguements:".format(length))
     while i <= length:
-        print("{:d} : {:s}".format(i, sys.argv[i]))
+        print("{:d}: {:s}".format(i, sys.argv[i]))
         i += 1
