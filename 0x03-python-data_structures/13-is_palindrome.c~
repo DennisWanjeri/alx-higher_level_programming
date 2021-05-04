@@ -1,0 +1,14 @@
+/**
+ *reverse_listint - reverses a linked list
+ *@head:pointer to first node
+ *Return:address of reversed list
+ */
+listint_t 
+/**
+ *is_palindrome - checks whether a linked list is palindrome
+ *@head:pointer to first node
+ *Return:1 - on success, 0 otherwise
+ */
+int is_palindrome(listint_t **head)
+{
+	
