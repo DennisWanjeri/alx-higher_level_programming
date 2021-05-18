@@ -16,7 +16,7 @@ class Node:
 
     @data.setter
     def data(self, value):
-        if type(data) is not int:
+        if type(value) is not int:
             raise TypeError("data must be an integer")
         else:
             self.__data = value
@@ -40,3 +40,29 @@ class SinglyLinkedList:
     def __init__(self):
         """class initialization"""
         self.__head = None
+
+    def sorted_insert(self, value):
+        """inserts a node to a singly linked list
+        Node inserted in an ordered manner"""
+        new_node = Node(value)
+        if self.__head is None:
+            new_node.next_node = None
+            self.__head = new_node
+        elif self.__head.data > value:
+            new_node.next_node = self.__head
+            self.__head = new_node
+        else:
+            tmp = self.__head
+            while (tmp.next_node is not None and tmp.next_node.data < value):
+                tmp = tmp.next_node
+            new_node.next_node = tmp.next_node
+            tmp.next_node = new_node
+
+    def __str__(self):
+        """linked list presentation when print() is called"""
+        arry = []
+        tmp = self.__head
+        while tmp is not None:
+            arry.append(str(tmp.data))
+            tmp = tmp.next_node
+        return('\n'.join(arry))
