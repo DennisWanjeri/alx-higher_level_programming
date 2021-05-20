@@ -14,6 +14,6 @@ first_name and last_name must be strings
 should print My name is <first_name> <last_name>
 ::
 	>>> say_my_name("Bob")
-	My name is Bob
+	My name is Bob 
 	>>> say_my_name("Dennis", "Wanjeri")
 	My name is Dennis Wanjeri
