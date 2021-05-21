@@ -6,8 +6,8 @@ def text_indentation(text):
     """prints with 2 new lines after each of these characters: ., ? and : """
     if type(text) is not str:
         raise TypeError("text must be a string")
-    checks="?.:"
-    newstr=""
+    checks = "?.:"
+    newstr = ""
     i = 0
     while i < len(text) and text[i] == ' ':
         i += 1
