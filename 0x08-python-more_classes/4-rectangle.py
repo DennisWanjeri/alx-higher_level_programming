@@ -57,6 +57,11 @@ class Rectangle:
         for i in range(self.__height):
             [rec.append('#') for j in range(self.__width)]
 
-            if i > self.__height - 1:
+            if i !=  self.__height - 1:
                 rec.append("\n")
         return ("".join(rec))
+
+    def __repr__(self):
+        """returns the string representation of the rectangle"""
+        representation = "Rectangle({}, {})".format(self.__width, self.__height)
+        return representation
