@@ -14,6 +14,6 @@ class Student:
         """retrieves dictionary representation of student"""
         if attrs is None:
             return self.__dict__
-        if (isinstance(attrs, list) and all(type(ele) == str for ele in attrs)):
+        if (isinstance(attrs, list) and
+                all(type(ele) == str for ele in attrs)):
             return {v: getattr(self, v) for v in attrs if hasattr(self, v)}
-                    
