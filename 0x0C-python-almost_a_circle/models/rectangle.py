@@ -64,7 +64,7 @@ class Rectangle(Base):
     def y(self, value):
         """setting and validating y"""
         if type(value) is not int:
-            raise TypeError("y must be an int")
+            raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
@@ -129,7 +129,8 @@ class Rectangle(Base):
             "height": self.height,
             "x": self.x,
             "y": self.y
-            }
+        }
+
     def __str__(self):
         """str representation"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
