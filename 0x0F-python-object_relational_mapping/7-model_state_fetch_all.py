@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# lists all state objects from hbtn_0e_6_usa
+""" lists all state objects from hbtn_0e_6_usa"""
 
 
 import sys
@@ -14,7 +14,5 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-
-
     for state in session.query(State).order_by(State.id):
         print("{}: {}".format(state.id, state.name))
