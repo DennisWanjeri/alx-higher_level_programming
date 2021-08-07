@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# lists cities by states
+"""lists cities by states"""
 import sys
 import MySQLdb
 
