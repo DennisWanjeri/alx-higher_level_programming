@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Defines a state model
+""" Defines a state model """
 
 
 from sqlalchemy import Column, Integer, String

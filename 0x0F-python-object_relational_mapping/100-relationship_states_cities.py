@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# creates the State "Carlifornia" with the City "San Francisco"
+""" creates the State "Carlifornia" with the City "San Francisco" """
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
