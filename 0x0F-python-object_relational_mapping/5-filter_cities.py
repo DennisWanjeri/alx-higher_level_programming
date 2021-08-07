@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# takes state as an arguement and lists all cities of that state
+""" takes state as an arguement and lists all cities of that state"""
 import sys
 import MySQLdb
 
@@ -10,5 +10,6 @@ if __name__ == "__main__":
     cursor.execute("SELECT * FROM `cities` as `c` \
                      INNER JOIN `states` as `s` \
                         ON `c`.`state_id` = `s`.`id` \
-                     ORDER BY `c`.`id`")
-    print(", ".join([ct[2] for ct in cursor.fetchall() if ct[4] == sys.argv[4]]))
+                    ORDER BY `c`.`id`")
+    fetch = cursor.fetchall()
+    print(", ".join([ct[2] for ct in fetch if ct[4] == sys.argv[4]]))
