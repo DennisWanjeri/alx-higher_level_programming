@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# prints the state object with the name passed as an arguement
+""" prints the state object with the name passed as an arguement"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
