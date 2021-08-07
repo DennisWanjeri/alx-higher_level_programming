@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# lists all state objects that contain letter 'a'
+""" lists all state objects that contain letter 'a'"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
