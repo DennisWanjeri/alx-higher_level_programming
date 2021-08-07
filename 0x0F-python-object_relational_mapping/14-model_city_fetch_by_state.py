@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# lists all city objects
+""" lists all city objects """
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -13,8 +13,6 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-
-
     for city, state in session.query(City, State) \
                               .filter(City.state_id == State.id) \
                               .order_by(City.id):

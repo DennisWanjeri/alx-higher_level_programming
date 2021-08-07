@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# contains the class definition of a city
+""" contains the class definition of a city """
 
 
 from sqlalchemy import Column, ForeignKey, Integer, String
