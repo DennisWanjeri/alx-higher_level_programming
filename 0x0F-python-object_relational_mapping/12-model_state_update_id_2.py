@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# changes the name of a state object from db hbtn_0e_6_usa
+""" changes the name of a state object from db hbtn_0e_6_usa"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
