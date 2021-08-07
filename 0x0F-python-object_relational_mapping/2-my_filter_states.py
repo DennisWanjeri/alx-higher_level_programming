@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# takes an arguement and displays all states that match the arguement
+""" takes an arguement and displays all states that match the arguement """
 import sys
 import MySQLdb
 
