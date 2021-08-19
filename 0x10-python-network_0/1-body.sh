@@ -1,4 +1,3 @@
 #!/bin/bash
-# takes in a url, sends a GET request to the url and displays the body
-# of the response
+# takes in a url, sends a GET request
 curl -sL "$1"
